@@ -76,7 +76,7 @@ namespace WebStudy.Controllers
                 return false;
             }
             result.Score = NewScore;
-            result.Date = DateTime.Now;
+            result.FixDate = DateTime.Now;
             if (_context.SaveChanges() > 0) //DB 변경사항 확정하기
             {
                 return true;
